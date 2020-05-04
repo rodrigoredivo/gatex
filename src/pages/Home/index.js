@@ -1,33 +1,10 @@
 import React from 'react'
-import Logo from '../../assets/logo.jpg'
-import { Link }  from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 import './styles.css';
 
 export default function Header() {
   return(
     <div className='header'>
-      <nav className='navbar navbar-default navbar-fixed-top'>
-        <div className='container'>
-          <div className='navbar-header'>
-            <button type='button' className='navbar-toggle' data-toggle='collapse' data-target='#myNavbar'>
-            <span className='icon-bar'></span>
-            <span className='icon-bar'></span>
-            <span className='icon-bar'></span>                        
-            </button>
-            <Link className='navbar-brand' to='/'><img src={Logo} alt="logo"/> </Link>
-          </div>
-          <div className='collapse navbar-collapse' id='myNavbar'>
-            <ul className='nav navbar-nav navbar-right'>
-              <li><Link to='/'>Inicio</Link></li>
-              <li><Link to='/categoria'>Categoria</Link></li>
-              <li><Link to='/produtos'>Produtos</Link></li>
-              <li><Link to='/lojas'>Lojas</Link></li>
-              <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Sign in</button>
-            </ul>
-          </div>
-        </div>
-      </nav>
       <div className='jumbotron text-center'>
         <h1>Deseja Aumentar suas vendas?<br />
           Cadastre seu produto conosco!</h1>  
@@ -90,7 +67,9 @@ export default function Header() {
               <div className="panel-footer">
                 <h3>R$19</h3>
                 <h4>Reais</h4>
+                <Link to='/cadastro'>
                 <button className="btn btn-lg">Cadastre-se</button>
+                </Link>
               </div>
             </div>      
           </div>     
@@ -108,7 +87,9 @@ export default function Header() {
               <div className="panel-footer">
                 <h3>R$129</h3>
                 <h4>Reais</h4>
+                <Link to='/cadastro'>
                 <button className="btn btn-lg">Cadastre-se</button>
+                </Link>
               </div>
             </div>      
           </div>       
@@ -126,88 +107,14 @@ export default function Header() {
               <div className="panel-footer">
                 <h3>R$149</h3>
                 <h4>Reais</h4>
+                <Link to='/cadastro'>
                 <button className="btn btn-lg">Cadastre-se</button>
+                </Link>
               </div>
             </div>      
           </div>    
         </div>
       </div>
-    <div>
-      <footer className="footer">				
-        <div className="container">
-          <div className="row">
-            <div className="col-md-3 m-b-30">
-              <div className="footer-title m-t-5 m-b-20 p-b-8">
-                About us
-              </div>	
-              <p className="white-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 text of the printing.
-              </p>
-            </div>
-            <div className="col-md-3 m-b-30">
-              <div className="footer-title m-t-5 m-b-20 p-b-8">
-                Latest themes
-              </div>	
-              <div className="footer-links">
-                <a href="/">
-                  Appointment
-                </a>
-                <a href="/">
-                  Health center
-                </a>
-                <a href="/">
-                  Quality
-                </a>
-                <a href="/">
-                  Wallstreet
-                </a>
-              </div>
-            </div>
-            <div className="col-md-3 m-b-30">
-              <div className="footer-title m-t-5 m-b-20 p-b-8">
-                Quick Links
-              </div>	
-              <div className="footer-links">
-                <a href="/">
-                  Blog
-                </a>
-                <a href="/">
-                  FAQ
-                </a>
-                <a href="/">
-                  Terms & conditions
-                </a>
-                <a href="/">
-                  Privacy policy
-                </a>
-              </div>
-            </div>
-            <div className="col-md-3 m-b-30">
-              <div className="footer-title m-t-5 m-b-20 p-b-8">
-                Support
-              </div>	
-              <div className="footer-links">
-                <a href="/">
-                  Affiliate
-                </a>
-                <a href="/">
-                  Login
-                </a>
-                <a href="/">
-                  All theme package
-                </a>
-                <a href="/">
-                  Support forum
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <div className="footer-bottom">
-        Copyright © 2020, All Rights Reserved
-      </div>
     </div>
-  </div>
   )
 }

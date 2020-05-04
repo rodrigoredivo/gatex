@@ -10,11 +10,15 @@ body {
 
 .card-signin {
   width: 700px;
-  height: 328px;
+  height: 400px;
   margin: 220px;
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-signin button {
+  margin-bottom: 30px;
 }
 
 .card-signin .card-title {

@@ -8,9 +8,20 @@ body {
   background-color: #f9f9f9;
 }
 
+.jumbotronMyProducts{
+  position: relative;
+  bottom: 50px;
+}
+
+.jumbotronMyProducts p{
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 100px;
+}
+
 .card-signin {
   width: 700px;
-  height: 328px;
+  height: 388px;
   margin: 220px;
   border: 0;
   border-radius: 1rem;
